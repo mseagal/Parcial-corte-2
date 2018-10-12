@@ -1,0 +1,17 @@
+/*--------------------------Primer punto-------------------------------*/
+
+{
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.println("Ingrese el primer numero");
+        int num1 = sc.nextInt();    //ingresa por teclado el pirmer numero
+        System.out.println("Ingrese el segundo numero");
+        int num2 = sc.nextInt();    //ingresa por teclado el segundo numero
+        
+        
+        System.out.println("La suma entre "+num1+" y "+num2+" es "+(num1+num2));    //muestra por pantalla y a su vez hace la opreacion de suma
+    
+    
+}
+
+
