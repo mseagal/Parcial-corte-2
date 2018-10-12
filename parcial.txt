@@ -14,4 +14,23 @@
     
 }
 
+/*---------------------------segundo punto------------------------------*/
 
+{
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Ingrese el numero de pisos: ");
+       int pisos= sc.nextInt();     
+       int b=pisos;         //b inicia igualada con pisos para que siga la secuencia
+        for(int i = 1;i <= pisos;i++ )      //va a recorrer los pisos 
+        {
+            for (int j = 0 ; j < b; j++) {      //for para recorrer los asteriscos
+                System.out.print("*");
+                 
+                
+            }
+            System.out.println("");         //el primer for pone los espacios
+           b--;
+        }
+        
+        
+    }
