@@ -63,3 +63,21 @@
         }
   
         }
+
+
+/*---------------------------sexto punto------------------------------*/
+
+
+{
+        Scanner sc = new Scanner(System.in);    //ingresa un numero por teclado
+        
+        char []abecedario={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+        System.out.print("Ingrese un numero: ");
+        int entrada=sc.nextInt();
+        
+        //escoge el valor del arreglo segun se lo indique "entrada"
+        System.out.println("El numero "+entrada+" corresponde a la letra "+(abecedario[entrada-1])+" en el abecedario");
+        
+        
+        
+    }
