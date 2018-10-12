@@ -34,3 +34,32 @@
         
         
     }
+
+/*---------------------------cuarto punto------------------------------*/
+
+   {
+        int []vector={10,5,1,20,3,6,90,6,12,10};
+        int a;  
+        
+        for(int i = 0; i < vector.length;i++){  //repite el proceso que sigue 10 veces
+            for (int j = 0; j < vector.length-1; j++) {     //recorre cada arreglo del vector
+                if(vector[j]>vector[j+1]){      //evalua vector[0] y vector[1] sucesivamente
+                    a=vector[j+1];
+                    vector[j+1]=vector[j];
+                    vector[j]=a;        //en caso de ser cierto se intercambian sus valores
+                    //ej: 10,5 --> 5,10
+                    //'a' ayuda a salvar un valor ya que con el intercambio se puede perder.
+                    
+                    
+                }
+                
+            }
+            
+            
+        }
+        
+          for (int i = 0; i < vector.length; i++) {
+              System.out.print(vector[i]+" ");  //muestra el vector final
+        }
+  
+        }
