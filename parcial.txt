@@ -34,6 +34,42 @@
         
         
     }
+/*---------------------------tercer punto------------------------------*/
+{
+        System.out.println(histori());        
+        // TODO code application logic here
+    }
+    public static String histori(){
+        String historia;                // declaramos las variables de tipo string para historia, nobmre, color, objeto,
+        String nombre = null;
+        String color = null;
+        String objeto= null;
+        int edad = 0;
+        String[] datos = new String[4];      // un arreglo de tipo string para datos para almacenar nuestros datos
+        for (int i = 0; i < datos.length ; i++) {
+            switch(i){
+                // solicitamos los datos para almacernarlos
+                case 0: nombre = JOptionPane.showInputDialog("Ingresa un nombre");
+                    break;
+                case 1: color = JOptionPane.showInputDialog("escriba un color");
+                    break;
+                case 2: objeto = JOptionPane.showInputDialog("Escriba el nombre de un objeto");
+                    break;
+                case 3: edad = Integer.parseInt(JOptionPane.showInputDialog("diigte su edad"));
+                    break;
+            }
+            // y concatemanos una historia con los datos almacenados anterior mente
+        }
+        historia = "hola me lllamo " +nombre+" mi color favorito es\n"
+                + "el "+color+" y por eso me compro todo de color "+color+" hasta mi\n"
+                + " "+objeto+ " es de color "+color+ " y aunque mi edad es \n"
+                + " "+edad+" años el "+color+" simpre sera mi color favorito!!!";
+        
+        return historia;
+    }
+
+
+
 
 /*---------------------------cuarto punto------------------------------*/
 
