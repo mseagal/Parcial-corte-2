@@ -99,7 +99,27 @@
         }
   
         }
-
+/*---------------------------quinto punto-----------------------------*/
+{
+        int [][] matriz = new int[10][10];                                 // declaramos la matriz
+        int [] cuenta = new int [10];                                      // declaramos un arreglo para que no lleve la cuenta de cada numero de la diagonal  
+        int resultado = 0;                                                 // declaramos una variable para que no guarde la suma de todos los valores de nuestra diagonal
+        for (int i = 0; i < matriz.length; i++) {                          
+            for (int j = 0; j < matriz[i].length; j++) {                 
+                int contador;                                              //declaramos una variable contador para hacer que nuestra matriz tenga valores de uno a 10
+                contador = j+1;               
+                matriz[i][j]=contador;                                     // decimos que en la pocision de i y j no coloque el valor de contador
+                System.out.print(matriz[i][j]+" "); 
+            }             
+            System.out.println("");            
+        }
+        for (int i = 0; i < 10; i++) {
+            cuenta[i]= (i-matriz.length);                                  // le asigamos a cuenta el valor del numero que corresponde en la diagonal
+                resultado += cuenta[i];                                    // le damos a resultado el valor de las suma de la diagonal
+        }
+        resultado = (resultado*(-1));
+        System.out.println("La suma de la diagonal es: "+resultado);       
+    }
 
 /*---------------------------sexto punto------------------------------*/
 
